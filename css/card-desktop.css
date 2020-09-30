@@ -1,0 +1,55 @@
+@media (min-width: 1024px) {
+  .container {
+    display: grid;
+    grid-template-areas:
+      "upper-content upper-content . switch-container"
+      "card-container card-container card-container card-container"
+      "overview overview overview overview"
+      "card-footer-container card-footer-container card-footer-container card-footer-container";
+  }
+  .upper-content {
+    grid-area: upper-content;
+  }
+  .horizontal-line {
+    display: none;
+  }
+  .switch-container {
+    grid-area: switch-container;
+  }
+  .card-container {
+    grid-area: card-container;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+  }
+  .overview {
+    grid-area: overview;
+  }
+  .card-footer-container {
+    grid-area: card-footer-container;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+  }
+  .card-footer-content {
+    margin: 0;
+  }
+  .card-footer-content:hover {
+    cursor: pointer;
+    background-color: rgb(227, 232, 235);
+  }
+  .card-content:hover {
+    cursor: pointer;
+    background-image: linear-gradient(rgb(227, 232, 235), rgb(227, 232, 235)),
+      linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+  }
+  .container-dark .card-footer-content:hover {
+    cursor: pointer;
+    background-color: hsl(229, 24%, 26%);
+  }
+  .container-dark .card-content:hover {
+    cursor: pointer;
+    background-image: linear-gradient(hsl(229, 24%, 26%), hsl(229, 24%, 26%)),
+      linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+  }
+}

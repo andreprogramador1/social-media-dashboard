@@ -1,0 +1,164 @@
+/*CARDS*/
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 26px 32px;
+  margin-bottom: 20px;
+  background-color: hsl(227, 47%, 96%);
+  border-radius: 7px;
+}
+.facebook {
+  border-top: 5px solid hsl(208, 92%, 53%);
+  border-radius: 7px;
+}
+.twitter {
+  border-top: 5px solid hsl(203, 89%, 53%);
+  border-radius: 7px;
+}
+.instagram {
+  border-top: 5px solid transparent;
+  border-radius: 7px;
+  background-image: linear-gradient(hsl(227, 47%, 96%), hsl(227, 47%, 96%)),
+    linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+
+/*.instagram {
+  border-top: 5px solid hsl(329, 70%, 58%);
+  border-radius: 7px;
+}*/
+
+.youtube {
+  border-top: 5px solid hsl(348, 97%, 39%);
+  border-radius: 7px;
+}
+.horizontal-card-info {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.horizontal-card-info span {
+  color: hsl(228, 12%, 44%);
+  font-weight: 700;
+  font-size: 12px;
+  margin-left: 8px;
+}
+.card-middle-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+  margin-bottom: 32px;
+}
+.card-middle-content h1 {
+  font-size: 50px;
+  color: hsl(230, 17%, 14%);
+}
+.card-middle-content p {
+  font-size: 13px;
+  letter-spacing: 3px;
+  color: hsl(228, 12%, 44%);
+  text-transform: uppercase;
+}
+.horizontal-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.horizontal-card-footer span {
+  font-weight: 700;
+  color: hsl(163, 72%, 41%);
+  margin-left: 3px;
+}
+
+.red span {
+  color: hsl(356, 69%, 56%);
+}
+.card-footer-content {
+  background-color: hsl(227, 47%, 96%);
+  padding: 16px;
+  margin-bottom: 16px;
+  border-radius: 7px;
+}
+.overview {
+  color: hsl(228, 12%, 44%);
+  margin-bottom: 16px;
+}
+.content-up {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.content-up p {
+  font-weight: 700;
+  color: hsl(228, 12%, 44%);
+}
+.content-down {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.horizontal-footer-info {
+  display: flex;
+  align-items: center;
+}
+.horizontal-footer-info span {
+  margin-left: 2px;
+  font-weight: 700;
+  color: hsl(163, 72%, 41%);
+}
+.red span {
+  color: hsl(356, 69%, 56%);
+}
+
+/*DARK THEME*/
+
+.container-dark .upper-content h1 {
+  color: hsl(0, 0%, 100%);
+}
+.container-dark .upper-content p {
+  color: hsl(228, 34%, 66%);
+}
+.container-dark .horizontal-line {
+  border-top: 1px solid hsla(228, 34%, 66%, 0.5);
+}
+.container-dark .card-content {
+  background-color: hsl(228, 28%, 20%);
+}
+
+.container-dark .instagram {
+  background-image: linear-gradient(hsl(228, 28%, 20%), hsl(228, 28%, 20%)),
+    linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+}
+
+.container-dark .switch-container p {
+  color: hsl(228, 34%, 66%);
+}
+.container-dark .horizontal-card-info span {
+  color: hsl(228, 34%, 66%);
+}
+.container-dark .card-middle-content h1,
+.container-dark .card-middle-content p {
+  color: hsl(0, 0%, 100%);
+}
+
+/*OVERVIEW*/
+
+.container-dark .overview {
+  color: hsl(0, 0%, 100%);
+}
+.container-dark .card-footer-content {
+  background-color: hsl(228, 28%, 20%);
+}
+.container-dark .content-up p {
+  color: hsl(228, 34%, 66%);
+}
+.container-dark .content-down h1 {
+  color: hsl(0, 0%, 100%);
+}
